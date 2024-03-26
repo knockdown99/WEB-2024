@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <style>
+        table {border: 1px double #333; width: 35%;border-spacing: 1px 1px;} 
+        td {padding: 0px; border: 1px solid #000000;} 
+    </style>
+    <table>
+        <tr>
+            <td rowspan="2">A<br>B</td> 
+            <td colspan="2">C</td> 
+            <td colspan="2">D</td> 
+            <td>E</td>
+        </tr>
+        <tr>
+            <td colspan="4">F</td> 
+            <td>G</td>
+        </tr>
+        <tr>
+            <td>H</td> 
+            <td>I</td> 
+            <td rowspan="2">J<br>K</td> 
+            <td>L</td> 
+            <td>M</td> 
+            <td>N</td>
+        </tr>
+        <tr>
+            <td rowspan="2">O<br>P</td>
+            <td>Q</td>
+            <td>R</td>
+            <td colspan="2" rowspan="3" >S<br>T<br>U</td>
+        </tr>
+        <tr>
+            <td colspan="3" rowspan="2">V<br>W</td>
+        </tr>
+        <tr>
+            <td>X</td>
+        </tr>
+    </table>
+</body>
+</html>
