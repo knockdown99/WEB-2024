@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <style>
+        table {border: 3px double #333; width: 36%;border-spacing: 1px 1px;} 
+        td {padding: 1px; border: 1px solid #000000;} 
+    </style>
+    <table>
+        <tr>
+            <th colspan="2">Pizza Shop 2.0</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" style="width: 293px; " id="input0" name="input0"></td>
+        </tr>
+        <tr>
+            <td>Pizza Toping</td>
+            <td>
+                <form>
+                    <label>
+                        <input type="radio" name="Toping" value="option0"> Supreme</label><br>
+                    <label>
+                        <input type="radio" name="Toping" value="option1"> Vegetarian</label><br>
+                    <label>
+                        <input type="radio" name="Toping" value="option2"> Hawaiian</label>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>Pizza Sauce</td>
+            <td>
+                <select id="sauce" name="sauce">
+                    <option value="sauce1">Tomato</option>
+                    <option value="sauce2">Marinara</option>
+                    <option value="sauce3">White</option>
+                    <option value="sauce1">Buffalo Sauce</option>
+                    <option value="sauce1">Pesto</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Optional Extras</td>
+            <td>
+                <div>
+                    <input type="checkbox" id="scales" name="scales" checked />
+                    <label for="scales">Extra Cheese</label>
+                  </div>
+                
+                  <div>
+                    <input type="checkbox" id="horns" name="horns" />
+                    <label for="horns">Gluten Free Base</label>
+                  </div>
+            </td>
+        </tr>
+        <tr> 
+            <td colspan="2">
+                Delivery Instructions:<br>
+                <input type="text" style="width: 400px; height: 50px;" id="input1" name="input1">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Send my Order" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
